@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".question.AskFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/img_ask_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+
+            <TextView
+                android:id="@+id/txt_ask_coinText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                tools:text="20 سوال" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/txt_ask_coinText"
+                android:tint="@color/blueGreen"
+                app:srcCompat="@drawable/coin" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:text="پرسیدن هر سوال فنی ده امتیاز دارد"
+            android:padding="8dp"
+            android:background="@color/blueGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:padding="8dp"
+            android:background="@drawable/shape_question_text"
+            android:id="@+id/edt_ask_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="right"
+            android:layout_marginBottom="8dp"
+            android:hint="عنوان سوال..."
+            android:textColor="@color/black" />
+
+        <EditText
+            android:background="@drawable/shape_question_text"
+            android:id="@+id/edt_ask_text"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="right"
+            android:hint="متن سوال..."
+            android:padding="4dp"
+            android:textColor="@color/black" />
+
+        <View
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey300" />
+
+        <RadioGroup
+            android:id="@+id/rg_ask_radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <RadioButton
+                android:id="@+id/radio_ask_moshavere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layoutDirection="rtl"
+                android:text="مشاوره ( در مورد دوره های سایت و یا بازار کار) (رایگان)"
+                android:textDirection="rtl" />
+
+            <RadioButton
+                android:id="@+id/radio_ask_fanni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فنی ( سوال در مورد کد یا سورس و یا اشکال در برنامه نویسی)" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_ask_rule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/question_fani"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_ask_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="خرید اعتبار برای سوالات فنی"
+            android:visibility="invisible" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey300" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:text="دوره خود را از منوی زیر انتخاب کنید:" />
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/nice_ask_spinner"
+            android:layout_width="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_height="wrap_content"
+            app:arrowTint="@color/colorAccent"
+            app:textTint="@color/black" />
+
+        <Button
+            android:id="@+id/btn_ask_ask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:background="@drawable/shape_login_button"
+            android:text="ارسال سوال"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txt_ask_showRules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="مشاهده قوانین پرسش و پاسخ"
+            android:textColor="@color/lightBlue" />
+    </LinearLayout>
+
+
+</ScrollView>

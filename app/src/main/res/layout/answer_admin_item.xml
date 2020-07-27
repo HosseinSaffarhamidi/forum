@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="4dp"
+    android:background="@color/white"
+    android:layout_marginBottom="4dp"
+    android:id="@+id/rel_adminItem_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="8dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/img_adminItem_logo"
+        tools:src="@drawable/user_logo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/white"
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/shape_best_user_item"
+        android:id="@+id/txt_adminItem_id"
+        tools:text="12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/txt_adminItem_id"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@id/img_adminItem_logo"
+        android:textColor="@color/black"
+        tools:text="سوال در مورد شروع یک استارتاپ"
+        android:id="@+id/txt_adminItem_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/txt_adminItem_name"
+        android:layout_below="@id/img_adminItem_logo"
+        tools:text="علی علوی"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/v_adminItem"
+        android:layout_below="@id/txt_adminItem_name"
+        android:background="@color/grey300"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:padding="8dp"
+        tools:text="سوال در مورد شروع یک استارتاپ"
+        android:textColor="@color/black"
+        android:layout_below="@id/v_adminItem"
+        android:id="@+id/txt_adminItem_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_adminItem_course"
+        android:paddingRight="8dp"
+        android:paddingLeft="4dp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_rules_item_shadow"
+        android:layout_below="@id/txt_adminItem_text"
+        tools:text="دوره صفر تا صد اندروید"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:paddingRight="4dp"
+        android:paddingLeft="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textColor="@color/white"
+        android:layout_toRightOf="@id/txt_adminItem_course"
+        android:background="@drawable/shape_question_list"
+        tools:text="مشاوره"
+        android:layout_below="@id/txt_adminItem_text"
+        android:id="@+id/txt_adminItem_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:id="@+id/txt_adminItem_date"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@id/txt_adminItem_type"
+        tools:text="تاریخ : 12/8/98"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <Button
+        android:backgroundTint="@color/lightBlue"
+        android:text="پاسخ"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txt_adminItem_date"
+        android:id="@+id/btn_adminItem_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btn_adminItem_wrongType"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/txt_adminItem_date"
+        android:layout_toLeftOf="@id/btn_adminItem_answer"
+        android:text="سوال شما فنی است"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
+
+
+
+

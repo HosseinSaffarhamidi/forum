@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".codes.NewCodeFragment">
+
+    <TextView
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="در صورت تایید کد شما 25 امتیاز به شما تعلق خواهد گرفت"
+        android:id="@+id/txt_newCode_pointOfCode"
+        android:textColor="@color/blueGreen"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:padding="8dp"
+        android:background="@drawable/shape_question_text"
+        android:layout_below="@id/txt_newCode_pointOfCode"
+        android:textColor="@color/black"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="عنوان کد ..."
+        android:id="@+id/edt_newCode_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+
+        android:padding="8dp"
+        android:background="@drawable/shape_question_text"
+        android:layout_below="@id/edt_newCode_title"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="توضیحات کد.."
+        android:id="@+id/edt_newCode_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+    <EditText
+        android:padding="8dp"
+        android:background="@drawable/shape_question_text"
+        android:layout_below="@id/edt_newCode_text"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="کد..."
+        android:id="@+id/edt_newCode_code"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+    <Button
+        android:id="@+id/linear_newCode_send"
+        android:text="ارسال کد"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edt_newCode_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@color/white"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/card_codeItem_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="100dp"
+            android:src="@drawable/woman"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            android:id="@+id/img_codeItem_userImage"
+            app:civ_shadow="true"
+            app:civ_shadow_radius="10"
+            app:civ_shadow_color="@color/white"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:gravity="right"
+            android:id="@+id/txt_codeItem_title"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="4dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="کد بازگشت از برنامه"
+            android:layout_toLeftOf="@id/img_codeItem_userImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="12sp"
+            android:gravity="right"
+            android:id="@+id/txt_codeItem_text"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="توضیحات در مورد کد "
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/img_codeItem_userImage"
+            android:layout_below="@id/txt_codeItem_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/white"
+            android:background="@drawable/shape_point"
+            android:id="@+id/txt_codeItem_point"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="8dp"
+            tools:text="120"
+            android:layout_below="@id/txt_codeItem_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:textSize="12sp"
+            android:id="@+id/txt_codeItem_date"
+            tools:text="تاریخ : 12/12/98"
+            android:paddingBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/txt_codeItem_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+

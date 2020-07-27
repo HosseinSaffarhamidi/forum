@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey100"
+    tools:context=".codes.DetailCodeFragment">
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/img_pendingItem_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="2dp"
+        app:civ_shadow="true"
+        app:civ_shadow_color="@color/white"
+        app:civ_shadow_radius="10"
+        tools:src="@drawable/woman" />
+
+
+    <TextView
+        android:id="@+id/txt_pendingItem_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@id/img_pendingItem_image"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        tools:text="رضا سعیدی" />
+
+    <TextView
+        android:id="@+id/txt_pendingItem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_pendingItem_title"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@id/img_pendingItem_image"
+        android:textColor="@color/colorPrimary"
+        tools:text="رضا سعیدی" />
+
+
+    <TextView
+        android:id="@+id/txt_pendingItem_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_pendingItem_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:textSize="12sp"
+        tools:text="تاریخ : 12/12/98" />
+
+    <View
+        android:id="@+id/v_pendingItem_view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/txt_pendingItem_date"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_toLeftOf="@id/img_pendingItem_image"
+        android:background="@color/grey300" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_pendingItem_textFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/v_pendingItem_view"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/txt_pendingItem_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textColor="@color/black"
+            tools:text="توضیحات کد " />
+
+    </androidx.cardview.widget.CardView>
+
+
+        <io.github.kbiakov.codeview.CodeView
+            android:layout_below="@id/card_pendingItem_textFrame"
+            android:id="@+id/codeView_pendingItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="24dp" />
+
+
+    <Button
+        android:id="@+id/btn_pendingItem_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/codeView_pendingItem"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="تایید کد" />
+
+
+</RelativeLayout>

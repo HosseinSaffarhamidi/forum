@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/grey100"
+    android:layout_height="match_parent"
+    tools:context=".question.AnswerFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_admin_toolbar"
+        android:padding="8dp"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_admin_back"
+            android:tint="@color/white"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_arrow_forward_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/img_admin_pendingItems"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_pending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="لیست سوال و جواب ها"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/img_admin_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/rel_admin_toolbar"
+        android:id="@+id/rv_admin_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lin_admin_emptyFrame"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center"
+            android:text="شما هنوز سوالی نپرسیدید"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie_admin_emptyState"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="empty.json"
+            app:lottie_loop="false" />
+
+        <TextView
+            android:foreground="?attr/selectableItemBackground"
+            android:id="@+id/txt_admin_askNewQuestion"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:background="@drawable/shape_question_list"
+            android:text="اولین سوال خودت رو بپرس!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_admin_noQuestionWarning"
+        android:layout_centerInParent="true"
+        android:text="سوالی برای پاسخ وجود ندارد"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

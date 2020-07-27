@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".question.LoginFragment">
+
+
+    <ImageView
+        android:id="@+id/img_login_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/white"
+        android:tint="@color/blueGreen"
+        app:srcCompat="@drawable/ic_arrow_forward_black_24dp" />
+
+    <TextView
+        android:id="@+id/txt_login_loginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_login_back"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:fontFamily="@font/bold"
+        android:text="ورود به حساب کاربری"
+        android:textColor="@color/blueGreen"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/edt_login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_login_loginText"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/shape_question_text"
+        android:gravity="right"
+        android:hint="ایمیل"
+        android:padding="8dp"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/edt_login_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_login_email"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/shape_question_text"
+        android:gravity="right"
+        android:hint="کلمه عبور"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:paddingLeft="8dp"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <Button
+        android:background="@drawable/shape_question_list"
+        android:id="@+id/btn_login_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_login_pass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="ورود به حساب کاربری"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txt_login_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="ثبت نام"
+        android:textColor="@color/colorPrimary" />
+
+
+</RelativeLayout>
+
+
+

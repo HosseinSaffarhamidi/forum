@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".question.LoginFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:id="@+id/img_signup_back"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="32dp"
+            android:tint="@color/blueGreen"
+            app:srcCompat="@drawable/ic_arrow_forward_black_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_signup_loginText"
+            android:layout_below="@id/img_signup_back"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/blueGreen"
+            android:textSize="24sp"
+            android:fontFamily="@font/bold"
+            android:layout_alignParentRight="true"
+            android:text="ثبت نام"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:padding="8dp"
+            android:background="@drawable/shape_question_text"
+            android:textSize="14sp"
+            android:gravity="right"
+            android:textColor="@color/black"
+            android:id="@+id/edt_signup_name"
+            android:hint="نام..."
+            android:layout_marginTop="32dp"
+            android:layout_below="@id/txt_signup_loginText"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textSize="14sp"
+            android:gravity="right"
+            android:padding="8dp"
+            android:background="@drawable/shape_question_text"
+            android:textColor="@color/black"
+            android:hint="نام خانوادگی..."
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/edt_signup_name"
+            android:id="@+id/edt_signup_family"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textSize="14sp"
+            android:gravity="right"
+            android:padding="8dp"
+            android:background="@drawable/shape_question_text"
+            android:textColor="@color/black"
+            android:hint="ایمیل..."
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/edt_signup_family"
+            android:id="@+id/edt_signup_email"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:gravity="right"
+            android:padding="8dp"
+            android:background="@drawable/shape_question_text"
+            android:textColor="@color/black"
+            android:hint="کلمه عبور..."
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/edt_signup_email"
+            android:id="@+id/edt_signup_pass"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:textSize="14sp"
+            android:gravity="right"
+            android:padding="8dp"
+            android:background="@drawable/shape_question_text"
+            android:textColor="@color/black"
+            android:hint="شماره همراه..."
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/edt_signup_pass"
+            android:id="@+id/edt_signup_phone"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <RadioGroup
+            android:layout_marginRight="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/edt_signup_phone"
+            android:id="@+id/rg_signup_radioGroup"
+            android:padding="8dp"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_marginRight="16dp"
+                android:layoutDirection="rtl"
+                android:id="@+id/radio_signup_woman"
+                android:text="زن"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <RadioButton
+                android:checked="true"
+                android:layout_marginLeft="16dp"
+                android:layoutDirection="rtl"
+                android:id="@+id/radio_signup_man"
+                android:text="مرد"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RadioGroup>
+
+        <Button
+            android:foreground="?attr/selectableItemBackground"
+            android:textColor="@color/white"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="@drawable/shape_login_button"
+            android:id="@+id/btn_signup_signup"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rg_signup_radioGroup"
+            android:text="ثبت نام"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</ScrollView>
